@@ -200,7 +200,7 @@
   }
   @media (max-width:520px){
     .beats{grid-template-columns:1fr}
-    .nav-link{display:none}
+    .nav-link:not(.nav-link--persist){display:none}
     .eyebrow{letter-spacing:.1em}
     .foot{flex-direction:column;align-items:flex-start;gap:1rem}
     .foot-meta{flex-direction:column;align-items:flex-start;gap:.45rem}
@@ -225,7 +225,7 @@
     <img class="wordmark-img" src="bumbl-wordmark-navy.svg" alt="bumbl">
     </a>
     <nav style="display:flex;gap:1.6rem">
-      <a class="nav-link" href="how-we-think.html">How we think</a>
+      <a class="nav-link nav-link--persist" href="how-we-think.html">How we think</a>
       <a class="nav-link" href="#contact">Contact</a>
     </nav>
   </div>
